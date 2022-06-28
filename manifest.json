@@ -1,0 +1,28 @@
+{
+
+    "manifest_version": 2,
+    "name": "rich strong",
+    "description": "show website's ip and country flag.show latency.proxy control.etc",
+    "version": "1.0",
+
+    "icons": {
+        "48": "image/logo.png",
+        "96": "image/logo.png"
+    },
+
+    "background": {
+        "scripts": [
+            "background/config.js",
+            "background/line.js",
+            "background/line_manager.js",
+            "background/controller.js",
+            "background/main.js"
+        ]
+    },
+
+    "page_action": {
+        "default_icon": "image/logo.png"
+    },
+
+    "permissions": ["tabs","proxy", "webRequest", "<all_urls>"]
+}
